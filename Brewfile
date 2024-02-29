@@ -13,3 +13,5 @@ tap "koekeishiya/formulae"
 brew "koekeishiya/formulae/yabai"
 brew "koekeishiya/formulae/skhd"
 brew "jq"
+
+brew "zoxide"

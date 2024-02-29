@@ -5,8 +5,10 @@ plug "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/exports.sh"
 
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
+plug "jeffreytse/zsh-vi-mode"
 
 autoload -Uz compinit
 compinit
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh --cmd cd)"
