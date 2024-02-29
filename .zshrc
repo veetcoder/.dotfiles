@@ -3,6 +3,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 plug "${XDG_CONFIG_HOME:-$HOME/.config}/zsh/exports.sh"
 
+plug "zap-zsh/fzf"
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "jeffreytse/zsh-vi-mode"

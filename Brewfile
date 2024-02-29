@@ -15,3 +15,4 @@ brew "koekeishiya/formulae/skhd"
 brew "jq"
 
 brew "zoxide"
+brew "fzf"
