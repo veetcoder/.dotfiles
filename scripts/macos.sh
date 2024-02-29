@@ -98,17 +98,24 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Enable key repeat at a fast rate
-defaults write -g KeyRepeat -int 1 
+defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
 
 # Disable press-and-hold for keys
 defaults write NSGlobalDomain "ApplePressAndHoldEnabled" -bool "false"
 
 # Miscellaneous
+
+# Disable quarantine
 defaults write com.apple.LaunchServices "LSQuarantine" -bool "false"
+
+# Set computer name
+sudo scutil --set ComputerName "veetcoder-mbp" &&
+	sudo scutil --set HostName "veetcoder-mbp" &&
+	sudo scutil --set LocalHostName "veetcoder-mbp" &&
+	sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "elmouradi-mbp"
 
 # Restart affected applications
 killall SystemUIServer
 killall Dock
 killall Finder
-
