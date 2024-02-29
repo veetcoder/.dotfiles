@@ -144,11 +144,18 @@
             }
           }
         }
+      },
+      "koekeishiya/formulae/yabai": {
+        "version": "6.0.15",
+        "bottle": false
       }
     },
     "tap": {
       "homebrew/cask-fonts": {
         "revision": "d1985142ad6b15d7c260cb1cbfdacbadb1dd0c7e"
+      },
+      "koekeishiya/formulae": {
+        "revision": "b5a09678f24b05184d62cf5a4838187e39ccc93c"
       }
     }
   },

@@ -98,7 +98,7 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Enable key repeat at a fast rate
-defaults write -g KeyRepeat -int 2 
+defaults write -g KeyRepeat -int 1 
 defaults write -g InitialKeyRepeat -int 10
 
 # Disable press-and-hold for keys
