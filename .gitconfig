@@ -1,0 +1,9 @@
+[user]
+	email = veetcoder@gmail.com
+	name = Veet Coder 
+
+[core]
+	editor = nvim
+
+[commit]
+    gpgsign = true
