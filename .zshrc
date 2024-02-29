@@ -7,6 +7,7 @@ plug "zap-zsh/fzf"
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
 plug "jeffreytse/zsh-vi-mode"
+plug "aloxaf/fzf-tab"
 
 autoload -Uz compinit
 compinit

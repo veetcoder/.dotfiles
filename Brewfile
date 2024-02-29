@@ -16,3 +16,5 @@ brew "jq"
 
 brew "zoxide"
 brew "fzf"
+brew "tmux"
+brew "tpm"
