@@ -1,0 +1,48 @@
+# Window focus navigation
+alt - j : yabai -m window --focus south
+alt - k : yabai -m window --focus north 
+alt - h : yabai -m window --focus west 
+alt - l : yabai -m window --focus east 
+
+# Display focus navigation
+alt - s : yabai -m display --focus west
+alt - g : yabai -m display --focus east
+
+# Window swap
+shift + alt - j : yabai -m window --swap south
+shift + alt - k : yabai -m window --swap north 
+shift + alt - h : yabai -m window --swap west 
+shift + alt - l : yabai -m window --swap east 
+
+# Move window to space
+shift + alt - 1 : yabai -m window --space 1
+shift + alt - 2 : yabai -m window --space 2
+shift + alt - 3 : yabai -m window --space 3
+
+# Move window to display
+shift + alt - s : yabai -m window --display west; yabai -m display --focus west
+shift + alt - g : yabai -m window --display east; yabai -m display --focus east
+
+# Resize window
+ctrl + alt - h : yabai -m window --resize left:-20:0 ; yabai -m window --resize right:-20:0
+ctrl + alt - j : yabai -m window --resize bottom:0:20 ; yabai -m window --resize top:0:20
+ctrl + alt - k : yabai -m window --resize top:0:-20 ; yabai -m window --resize bottom:0:-20
+ctrl + alt - l : yabai -m window --resize right:20:0 ; yabai -m window --resize left:20:0
+
+# Toggle fullscreen
+alt - f : yabai -m window --toggle zoom-fullscreen
+
+# Balance windows
+alt - e : yabai -m space --balance
+
+# Create and focus
+ctrl + alt - n : yabai -m space --create;\
+                  id="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')";\
+                  yabai -m space --focus $id
+# Destroy space
+ctrl + alt - d : yabai -m space --destroy
+
+# Switch to specific space
+ctrl - 1 : yabai -m space --focus 1
+ctrl - 2 : yabai -m space --focus 2
+ctrl - 3 : yabai -m space --focus 3

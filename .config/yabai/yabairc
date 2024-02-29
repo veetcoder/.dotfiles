@@ -1,5 +1,4 @@
-#!/bin/bash
-
+# Set yabai layout configuration
 yabai -m config layout                     bsp
 yabai -m config window_gap                 8
 yabai -m config top_padding                8 
@@ -7,21 +6,14 @@ yabai -m config bottom_padding             8
 yabai -m config left_padding               8 
 yabai -m config right_padding              8 
 
-applications=(
-    "^Finder$"
-    "^choose$"
-    "^Raycast$"
-    "^System Settings$"
-    "^App Store$"
-    "^Activity Monitor$"
-    "^Calculator$"
-    "^Dictionary$"
-)
-
-for app in "${application[@]}"; do 
-    yabai -m rule --add app="$app" manage=off sticky=on layer=above
-done
-
-yabai -m space 1 --label one
-yabai -m space 2 --label two
-yabai -m space 3 --label three
+# Application to be ignored by yabai
+yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
+yabai -m rule --add app="^choose$" layer=above manage=off
+yabai -m rule --add label="raycast" app="^Raycast$" manage=off
+yabai -m rule --add label="System Settings" app="^System Settings$" manage=off
+yabai -m rule --add label="App Store" app="^App Store$" manage=off
+yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
+yabai -m rule --add label="Calculator" app="^Calculator$" manage=off
+yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
+yabai -m rule --add label="Software Update" title="Software Update" manage=off
+yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
