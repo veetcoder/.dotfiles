@@ -1,0 +1,11 @@
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
+belak/zsh-utils path:completion
+
+ohmyzsh/ohmyzsh path:plugins/brew
+ohmyzsh/ohmyzsh path:plugins/zoxide
+ohmyzsh/ohmyzsh path:plugins/fzf
+ohmyzsh/ohmyzsh path:plugins/nvm
+ohmyzsh/ohmyzsh path:plugins/starship
+ohmyzsh/ohmyzsh path:plugins/tmux
+Aloxaf/fzf-tab

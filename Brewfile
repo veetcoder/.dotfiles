@@ -1,0 +1,20 @@
+tap "homebrew/cask-fonts"
+cask "font-fira-code-nerd-font"
+
+cask "arc"
+cask "alacritty"
+cask "raycast"
+
+brew "fzf"
+brew "stow"
+brew "zoxide"
+brew "nvm"
+brew "starship"
+brew "tmux"
+brew "tpm"
+brew "lazygit"
+brew "gpg"
+
+tap "koekeishiya/formulae"
+brew "koekeishiya/formulae/yabai"
+brew "koekeishiya/formulae/skhd"
