@@ -1,4 +1,8 @@
 export ZOXIDE_CMD_OVERRIDE="cd"
 
-source ${ZDOTDIR:-~}/.antidote/antidote.zsh
+alias vim=nvim
+alias v=nvim
+
+source $HOME/.antidote/antidote.zsh
 antidote load
+
