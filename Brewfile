@@ -17,6 +17,7 @@ brew "gpg"
 brew "nvim"
 brew "ripgrep"
 brew "fd"
+brew "lsd"
 
 tap "koekeishiya/formulae"
 brew "koekeishiya/formulae/yabai"
