@@ -4,6 +4,7 @@ cask "font-fira-code-nerd-font"
 cask "arc"
 cask "alacritty"
 cask "raycast"
+cask "docker"
 
 brew "fzf"
 brew "stow"
