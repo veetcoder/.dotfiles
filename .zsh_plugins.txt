@@ -9,4 +9,6 @@ ohmyzsh/ohmyzsh path:plugins/nvm
 ohmyzsh/ohmyzsh path:plugins/starship
 ohmyzsh/ohmyzsh path:plugins/tmux
 ohmyzsh/ohmyzsh path:plugins/common-aliases
+ohmyzsh/ohmyzsh path:plugins/common-aliases
+ohmyzsh/ohmyzsh path:plugins/git
 Aloxaf/fzf-tab
