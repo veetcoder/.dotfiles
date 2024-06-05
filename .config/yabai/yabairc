@@ -1,0 +1,30 @@
+yabai -m config layout                     bsp
+yabai -m config window_gap                 8
+yabai -m config top_padding                8
+yabai -m config bottom_padding             8
+yabai -m config left_padding               8
+yabai -m config right_padding              8
+
+apps=(
+    "^Finder$"
+    "^Activity Monitor$"
+    "^System Settings$"
+    "^System Preferences$"
+    "^App Store$"
+    "^Activity Monitor$"
+    "^Calculator$"
+    "^Dictionary$"
+    "Software Update"
+    "System Information"
+)
+
+for app in ${apps[@]}; do
+    yabai -m rule --add app="$app" manage=off
+done
+
+
+# focus window after active space changes
+yabai -m signal --add event=space_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
+
+# focus window after active display changes
+yabai -m signal --add event=display_changed action="yabai -m window --focus \$(yabai -m query --windows --space | jq .[0].id)"
