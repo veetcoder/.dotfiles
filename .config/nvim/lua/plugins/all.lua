@@ -4,7 +4,9 @@
 -- * override the configuration of LazyVim plugins
 return {
   -- add catppuccin
-  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000, opts = {
+    transparent_background = true,
+  } },
 
   -- Configure LazyVim to load gruvbox
   {
